@@ -22,7 +22,7 @@
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a href="assets/Ibrahim_Saad_CV.pdf" class="btn btn--small" download>Download CV</a>
+    <a href="{{ url_for('static', filename='assets/Ibrahim_Saad_CV.pdf') }}" target="_blank">Download CV</a>
   </div>
 </header>
 
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="hero__photo">
-        <img src="assets/ibrahim-photo.jpeg" alt="Portrait of Ibrahim Saad">
+        <img src="{{ url_for('static', filename='assets/ibrahim-photo.jpeg') }}" alt="Ibrahim Photo">
       </div>
     </div>
   </section>
@@ -136,7 +136,7 @@
 
   <section class="cert">
     <div class="container cert__inner">
-      <img src="assets/aws-badge.png" alt="AWS Cloud Quest: Cloud Practitioner training badge" class="cert__badge">
+      <img src="{{ url_for('static', filename='assets/aws.badge.png') }}" alt="AWS Cloud Quest: Cloud Practitioner training badge " class="cert__badge" >
       <div class="cert__text">
         <p class="kicker">Certification</p>
         <h3>AWS Certified Cloud Practitioner</h3>
